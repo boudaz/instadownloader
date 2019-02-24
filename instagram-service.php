@@ -38,9 +38,9 @@ if(!$matches){
  exit;
 }
 //getting json from content
-$jsonp = $matches[1];
+$json = $matches[1];
 //decoding json to process
-$data = json_decode($jsonp, true);
+$data = json_decode($json, true);
 
 
 //checking image type

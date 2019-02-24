@@ -1,6 +1,6 @@
 <?php
 
-header('Access-Control-Allow-Origin: http://www.example.com');
+header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Credentials: true");
 header('Access-Control-Allow-Methods: GET, PUT, POST, DELETE, OPTIONS');
 //Grab posted url

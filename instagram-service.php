@@ -4,7 +4,9 @@ header("Access-Control-Allow-Origin: *");
 
 header('Access-Control-Allow-Credentials', true);
 header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
-	
+header('Content-Type: application/javascript');
+//Header('Content-Type: text/javascript');
+
 //Grab posted url
 $url     = $_POST['url'];
 
@@ -25,7 +27,8 @@ function file_get_contents_curl($url) {
     curl_close($ch);
     return $data;
 }
-//Checking for the json data in fetched content
+//Checking for the 
+data in fetched content
 $pattern = '/window._sharedData = (.*);/';
 preg_match($pattern, $data, $matches);
 

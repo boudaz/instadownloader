@@ -1,8 +1,8 @@
 <?php
 
-Header always set Access-Control-Allow-Origin "*"
-Header always set Access-Control-Allow-Methods "POST, GET, OPTIONS, DELETE, PUT"
-Header always set Access-Control-Allow-Headers "append,delete,entries,foreach,get,has,keys,set,values,Authorization"
+.header("Access-Control-Allow-Headers","*");
+.header('Access-Control-Allow-Credentials', true);
+.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
 	
 //Grab posted url
 $url     = $_POST['url'];

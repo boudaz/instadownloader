@@ -4,7 +4,7 @@ header("Access-Control-Allow-Origin: *");
 
 header('Access-Control-Allow-Credentials', true);
 header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
-Header('Content-Type: application/javascript ');
+Header('Content-Type: application/javascript');
 
 //Grab posted url
 $url     = $_POST['url'];
